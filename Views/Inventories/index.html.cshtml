@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.41, maximum-scale=1"
+    />
+    <title>Inventory API Demo</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: 'Lato';text-align: center;margin: 0;}
+        .pC {margin-bottom : 0; }
+        .pT { padding-top: 10vh}
+        .centered {width: 100vw;height: auto;margin: 0vh auto; margin-top: 0;background: black;padding-top: 20vh; padding-bottom: 20vh}
+        .centeredW {width: 100vw;height: auto;margin: 0vh auto;margin-top: 0; background: white;padding-top: 5vh; padding-bottom: 5vh;}
+        .centeredG {width: 100vw;height: auto;margin: 0vh auto;margin-top: 0; background: #f0f0f2;padding-top: 5vh; padding-bottom: 5vh; }
+        h1 {font-size: 4em;color: white;}
+        .h1W {font-size: 4em;color: black;}
+        .h1WS {font-size: 2em;color: black;}
+        .h1G {font-size: 4em;color: black;}
+        .scroll {font-size: 3em;color: white;}
+        .scrollW {font-size: 3em;color: black;}
+        .scrollWS {font-size: 1.5em;color: black;}
+        .scrollG {font-size: 3em;color: black;}
+        .specialPadding {padding-bottom: 20vh}
+        .specialPadding2 {padding-top: 10vh}
+        .blackFont {color: white; font-size: 2em}
+        .listAlig {text-align: left;}
+        .container {width: 600px;padding: 2em;background: #eee;text-align: center;}
+        ul {display: inline-block;text-align: left;}
+        .align-center {text-align: center;}
+        .centerBox {display: inline-block; }
+        .footer {
+ 
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+        .pF { margin:0; padding-top:5px; padding-bottom: 5px; box-sizing:border-box;}
+
+    </style>
+</head>
+
+<body>
+    <div class="centered">
+        <div class = "centerBox">
+        <h1>Demo of Inventory API V1 by JING NIE :</h1>
+        <ul>
+             <li class = "blackFont">This is a demo of Web API created by Dot Net Core 3.1. </li>
+            <li class = "blackFont">The API is returned by JSON format </li>
+            <li class = "blackFont">The service incuidling Popular JWT token authentication.  </li>
+            <li class = "blackFont">SWAGGER is used for auto documentaiton.  </li>
+            
+       </ul>
+       <br>
+       <p class = "scroll pT">SCROLL DOWN TO LEARN THE DETAIL.  </p>
+        </div>
+    </div>
+    
+    <div class = "centeredW">
+        <h1 class = "h1W">Learn about SWAGGER</h1>
+        <h1 class = "h1W specialPadding">API definition:</h1>
+        <a class = "scrollW pC" href = "@ViewData["link"]" >@ViewData["link"] </a>
+    </div>
+
+
+    <div class = "centeredG">
+        <h1 class = "h1G">Learn more API demo from</h1>
+        <h1 class = "h1G specialPadding">the main API List:</h1>
+        <a class = "scrollG pC" href = "@ViewData["bodyLink"]" >@ViewData["bodyLink"] </a>
+    </div>
+
+    <div class = "centeredW">
+        <h1 class = "h1W">JWT Token Base authentication</h1>
+        <P class = "h1WS">User authenticate Route</p>
+        <P class = "h1WS">Test User: TEST  Password: TEST</p>
+        <P class = "h1WS"> Input Json body as {
+    "username": "TEST",
+    "password": "TEST"
+        }</p>
+        
+        <P class = "scrollWS">@ViewData["authLink"] </P>
+
+        <P class = "h1WS specialPadding2">Get users list Route with token header</h1>
+        <P class = "scrollWS">@ViewData["usersLink"] </P>
+    </div>
+
+
+        <div class = "centeredG">
+        <h1 class = "h1G">Github Source Code</h1>
+        <a class = "h1G" href = "https://github.com/shinichijn/inventoryApi">https://github.com/shinichijn/inventoryApi</a>
+        <P class = "scrollG pC">If running it locally such as postman, please make sure to disable SSL verification </P>
+    </div>
+
+    <div class="footer">
+    <p class = "pF">Copyright © @ViewData["year"] JING NIE shinichi_jnie@hotmail.com/6868266861</p>
+    </div>
+
+
+</body>
+</html>
+
+
