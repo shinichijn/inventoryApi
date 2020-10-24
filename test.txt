@@ -1,2 +1,1 @@
-master one
-my word
+myword
